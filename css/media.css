@@ -110,7 +110,7 @@
 
 @media (min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
     .main-section {
-        background-image: url(../images/header-wide@2x.webp)
+        background-image: url(../img/tui-teaser_image-1_minute_tourismus@2x.webp)
     }
 }
 

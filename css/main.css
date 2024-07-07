@@ -3,7 +3,7 @@
     position: relative;
     height: 518px;
     background-color: #ece78b;
-    background-image: url(../images/header-wide.webp);
+    background-image: url(../img/tui-teaser_image-1_minute_tourismus.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 100%;
@@ -48,21 +48,5 @@
 
 .rounded {
     border-radius: 10px
-}
-
-.section-tip {
-    background: #E2F3FE;
-    padding: 40px 27px;
-    letter-spacing: -.18px;
-    margin-bottom: 30px;
-    line-height: 1.33
-}
-
-.section-tip_info {
-    letter-spacing: 0
-}
-
-.section-tip__icon {
-    margin-bottom: 21px
 }
 
