@@ -187,6 +187,21 @@ ul {
     margin-bottom: 30px;
 }
 
+.section-subtitle {
+    scroll-margin-top: 92px;
+    color: #092A5E;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 136.364% */
+}
+.section-subtitle.center-mode {
+   text-align: center;
+}
+.section-title.center-mode{
+   text-align: center;
+}
+
 .regular-title {
     font-size: 23px;
     color: #092a5e;
