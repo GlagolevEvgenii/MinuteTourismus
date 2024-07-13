@@ -1,7 +1,10 @@
 ::after, ::before, html {
     box-sizing: border-box
 }
-
+:root {
+    --svgcolor: #D40E14;
+    --arrowcolor: #092A5E;
+}
 main {
     overflow: hidden;
 }

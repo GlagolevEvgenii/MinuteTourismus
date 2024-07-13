@@ -73,13 +73,10 @@
 .card-transform{
     position: relative;
     min-height: 164px;
+    cursor: pointer;
 }
 .card-side{
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 32px;
     -webkit-transition: all 0.8s ease;
     transition: all 0.8s ease;
     position: absolute;
@@ -89,6 +86,13 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
+}
+.wrap-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 32px;
 }
 .card-front{
     background: #E2F3FE;
@@ -118,25 +122,69 @@
     color: #FFFFFF;
 }
 
-.icon path {
-    fill: currentColor!important; /* Это позволит цвету иконки наследовать цвет текста или заданный цвет */
-}
+
 .card-icon{
     width: 33px;
     height: 33px;
     margin-bottom: 15px;
-    /*fill: #D40E14;*/
-    fill: yellow!important;
 }
+.icon-arrow{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+
 .card-icon-back{
-    width: 33px;
-    height: 33px;
-    margin-bottom: 15px;
-    /*fill: #D40E14;*/
-    color: yellow;
+    width: 23px;
+    height: 23px;
+    margin-bottom: 10px;
+    --svgcolor:#fff;
 }
-#tui-icon-hotels_gasthoefe_pensionen-einchecken use path {
-    fill: yellow !important;
+.card-back .icon-arrow{
+    --arrowcolor:#fff;
+}
+
+.card-text-back{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.back-column{
+    display: flex;
+    gap:20px;
+}
+
+.back-column.small-mode{
+    flex-direction: column;
+}
+
+.column-item{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.column-item--number{
+    color: #FFF;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.column-item--text{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
 }
 
 .card-number{
