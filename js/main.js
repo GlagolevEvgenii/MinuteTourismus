@@ -20,7 +20,7 @@ const embedEngine = {
                     slidesPerView: 1,
                 },
                 767: {
-                    slidesPerView: 1.42,
+                    slidesPerView: 3.32,
                     spaceBetween: 20
                 }
             }
