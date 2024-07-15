@@ -1,7 +1,9 @@
 
 
-@media (min-width: 600px) {
-
+@media (min-width: 480px) {
+    .places-wrap{
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 776px) and (min-height: 600px) {
@@ -12,6 +14,16 @@
 }
 
 @media screen and (min-width: 768px) {
+    .quote-banner{
+        padding: 50px 60px;
+    }
+    .quote-holder{
+        padding: 0 110px;
+    }
+    .icon-quote{
+        width: 90px;
+        height: 70px;
+    }
     .main-section {
         background-position: center center
     }
@@ -115,6 +127,18 @@
 }
 
 @media screen and (min-width: 1000px) {
+    .fig-wrap{
+        margin-bottom: 176px;
+    }
+    .fig-wrap img, .fig-wrap picture{
+        margin-left: auto;
+    }
+    .fig-caption{
+        position: absolute;
+        max-width: 726px;
+        width: 100%;
+        bottom: -103px;
+    }
     .masonry-holder{
         display: flex;
         flex-wrap: wrap;
@@ -187,6 +211,7 @@
 @media (min-width: 1200px) {
     .section-figure.reverse-mode {
         flex-direction: row-reverse;
+        margin-bottom: 60px;
     }
     .section-figure.reverse-mode img {
         position: relative;

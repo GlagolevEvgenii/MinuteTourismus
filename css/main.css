@@ -1,7 +1,7 @@
 .main-section {
     overflow: hidden;
     position: relative;
-    height: 518px;
+    height: 440px;
     background-color: #ece78b;
     background-image: url(../img/tui-teaser_image-1_minute_tourismus.webp);
     background-repeat: no-repeat;
@@ -248,6 +248,13 @@
     line-height: 16px;
     text-decoration: none;
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+.icon-info{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
 }
 
 .arrivals-card{
@@ -280,6 +287,7 @@
 .places-wrap{
     display: flex;
     gap:16px;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 676px;
     margin: 0 auto 30px;
@@ -352,6 +360,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 .ticket-holder{
     display: grid;
@@ -369,4 +378,118 @@
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     width: 100%;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    border-radius: 0px 0px 10px 10px;
+    background: #70CBF4;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    position: absolute;
+    z-index: 1;
+    top: 185%;
+    right: -32px;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 23px;
+    margin-left: -5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent  transparent #70CBF4 transparent;
+}
+.quote-banner{
+    padding: 30px;
+    background-color: #E2F3FE;
+}
+.quote-holder{
+    position: relative;
+    padding: 0 40px;
+}
+.icon-quote{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+}
+.quote-start{
+    left: 0;
+    top:0;
+}
+.quote-end{
+    right: 0;
+    bottom:0;
+}
+.quote{
+    max-width: 730px;
+    margin: 0 auto;
+    color: #092A5E;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+ }
+.quote-info{
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+}
+.quote-info:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:0;
+    background-color: #fff;
+    height: 2px;
+    width: 154px;
+    transform: translateX(-50%);
+}
+.author{
+    color: #092A5E;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+}
+.author-info{
+    color: #092A5E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fig-wrap{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position: relative;
+}
+
+.fig-caption{
+    padding: 23px 40px 40px 40px;
+    background-color: #E2F3FE;
+    text-align: center;
 }
