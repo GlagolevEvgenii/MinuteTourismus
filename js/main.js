@@ -25,7 +25,36 @@ const embedEngine = {
                 }
             }
         });
+        const timerElement = document.getElementById('timer');
+        const timerElement1 = document.getElementById('timer1');
+        let timerStarted = false;
 
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                }
+            }, 1000);
+        }
+        const observer = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting && !timerStarted) {
+                startTimer(60, timerElement); // 60 секунд
+                timerStarted = true;
+            }
+        }, { threshold: 1.0 });
+
+
+        observer.observe(timerElement);
+        startTimer(60,timerElement1)
         const menuBtnRef = document.querySelector("[data-menu-button]");
         const mobileMenuRef = document.querySelector("[data-menu]");
         const expanded =

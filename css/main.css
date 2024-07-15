@@ -30,6 +30,37 @@
     padding-top: 8px;
     font-size: 24px
 }
+.timer-wrap{
+    position: absolute;
+    right: 0;
+    top:0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-radius: 0px 0px 0px 10px;
+    background: #D40E14;
+    padding: 10px 32px;
+}
+.icon-timer{
+    width: 21px;
+    height: 21px;
+    --svgcolor:#fff;
+}
+.timer{
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+.timer-text{
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
 
 .section-figure {
     margin: 40px 0;
@@ -81,6 +112,7 @@
     position: relative;
     min-height: 164px;
     cursor: pointer;
+    scroll-margin-top: 100px;
 }
 .card-side{
     border-radius: 10px;

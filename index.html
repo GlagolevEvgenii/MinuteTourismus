@@ -133,6 +133,13 @@
 </header>
 <main>
   <section class="main-section">
+    <div class="timer-wrap">
+      <svg class="icon-timer">
+        <use xlink:href="img/sprite.svg#tui-icon-uhr"></use>
+      </svg>
+      <span class="timer" id="timer1">01:00</span>
+      <span class="timer-text">Tourismus</span>
+    </div>
     <div class="container">
       <h1 class="main-section-title">
         Reiseziel Deutschland:
@@ -162,7 +169,7 @@
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-uhr"></use>
           </svg>
-          <span class="card-number">01:00</span>
+          <span class="card-number" id="timer">01:00</span>
           <a href="#" class="card-text">Tourismus</a>
         </div>
         <div class="card">
@@ -170,70 +177,70 @@
             <use xlink:href="img/sprite.svg#tui-icon-urlaubsreisender-reisender"></use>
           </svg>
           <span class="card-number">162</span>
-          <a href="#" class="card-text">Urlaubsreisende ></a>
+          <a href="#urlaubsreisende" class="card-text">Urlaubsreisende ></a>
         </div>
         <div class="card">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-gaesteankuenfte-einchecken"></use>
           </svg>
           <span class="card-number">349</span>
-          <a href="#" class="card-text">Gästeankünfte ></a>
+          <a href="#gästeankünfte" class="card-text">Gästeankünfte ></a>
         </div>
         <div class="card">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-auslandsreisen-erde"></use>
           </svg>
           <span class="card-number">96</span>
-          <a href="#" class="card-text">Auslandsreisen ></a>
+          <a href="#auslandsreisen" class="card-text">Auslandsreisen ></a>
         </div>
         <div class="card">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-reisebuchungen-ticket"></use>
           </svg>
           <span class="card-number">265</span>
-          <a href="#" class="card-text">Reisebuchungen ></a>
+          <a href="#reisebuchungen" class="card-text">Reisebuchungen ></a>
         </div>
         <div class="card">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-digital_gebuchte_reisen-handy"></use>
           </svg>
           <span class="card-number">167</span>
-          <a href="#" class="card-text">Digital gebuchte Reisen ></a>
+          <a href="#reisen" class="card-text">Digital gebuchte Reisen ></a>
         </div>
         <div class="card double-mode">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-ausgaben_urlaubsreisen-viel_geld_hand"></use>
           </svg>
           <span class="card-number">217.085 €</span>
-          <a href="#" class="card-text">Ausgaben für Urlaubsreisen ></a>
+          <a href="#urlaubsreisen" class="card-text">Ausgaben für Urlaubsreisen ></a>
         </div>
         <div class="card pt-15">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-passagiere_an_deutschen_flughaefen-landendes_flugzeug"></use>
           </svg>
           <span class="card-number">375</span>
-          <a href="#" class="card-text">Passagiere an deutschen <br> Flughäfen ></a>
+          <a href="#flughäfen" class="card-text">Passagiere an deutschen <br> Flughäfen ></a>
         </div>
         <div class="card pt-20">
           <div class="card-icon">
             <img src="img/icons/tui-icon-reisende_personenverkehr-bus_bahn.svg" width="33" height="33" alt="icon">
           </div>
           <span class="card-number">4.538</span>
-          <a href="#" class="card-text">Reisende Personenverkehr <br>(Schiene + Bus) ></a>
+          <a href="#personenverkehr" class="card-text">Reisende Personenverkehr <br>(Schiene + Bus) ></a>
         </div>
         <div class="card pt-20">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-nutzer_deutschlandticket-deutschland"></use>
           </svg>
           <span class="card-number">457</span>
-          <a href="#" class="card-text">Nutzer Deutschlandticket ></a>
+          <a href="#nutzer" class="card-text">Nutzer Deutschlandticket ></a>
         </div>
         <div class="card pt-20">
           <svg class="card-icon">
             <use xlink:href="img/sprite.svg#tui-icon-google_suchanfragen-lupe"></use>
           </svg>
           <span class="card-number">20</span>
-          <a href="#" class="card-text">Google-Suchanfragen: <br> Heidepark Soltau ></a>
+          <a href="#google-suchanfragen" class="card-text">Google-Suchanfragen: <br> Heidepark Soltau ></a>
         </div>
       </div>
     </div>
@@ -275,7 +282,7 @@
         Berlin boomt: Bundeshauptstadt lockt 23 Touristen pro Minute
       </h3>
       <div class="arrivals-card">
-        <div class="card-transform triple-mode">
+        <div class="card-transform triple-mode" id="gästeankünfte">
           <div class="card-side card-front">
             <div class="wrap-content">
               <svg class="icon-arrow">
@@ -836,7 +843,7 @@
     </div>
     <div class="container">
       <div class="triple-holder mb-60">
-        <div class="card-transform">
+        <div class="card-transform" id="urlaubsreisende">
           <div class="card-side card-front">
             <div class="wrap-content">
               <svg class="icon-arrow">
@@ -882,7 +889,7 @@
             </div>
           </div>
         </div>
-        <div class="card-transform">
+        <div class="card-transform" id="reisebuchungen">
           <div class="card-side card-front">
             <div class="wrap-content">
               <svg class="icon-arrow">
@@ -928,7 +935,7 @@
             </div>
           </div>
         </div>
-        <div class="card-transform">
+        <div class="card-transform" id="auslandsreisen">
           <div class="card-side card-front">
             <div class="wrap-content">
               <svg class="icon-arrow">
@@ -1091,7 +1098,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-transform">
+            <div class="card-transform" id="reisen">
               <div class="card-side card-front white-mode">
                 <div class="wrap-content">
                   <svg class="icon-arrow">
@@ -1160,7 +1167,7 @@
         Deutschland-Ticket
       </h3>
       <div class="ticket-holder mb-40">
-        <div class="card-transform">
+        <div class="card-transform" id="nutzer">
           <div class="card-side card-front white-mode">
             <div class="wrap-content">
               <svg class="icon-arrow">
@@ -1207,7 +1214,7 @@
         Deutsche Bahn 2023
       </h3>
       <div class="triple-holder mb-40">
-        <div class="card-transform">
+        <div class="card-transform"id="personenverkehr" >
           <div class="card-side card-front white-mode">
             <div class="wrap-content">
               <svg class="icon-arrow">
@@ -1325,7 +1332,7 @@
           </picture>
         </div>
         <div class="double-holder--right">
-          <div class="card-transform">
+          <div class="card-transform" id="flughäfen">
             <div class="card-side card-front white-mode">
               <div class="wrap-content">
                 <svg class="icon-arrow">
@@ -1597,7 +1604,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-transform">
+            <div class="card-transform" id="urlaubsreisen">
               <div class="card-side card-front white-mode">
                 <div class="wrap-content">
                   <svg class="icon-arrow">
@@ -1689,7 +1696,7 @@
     </div>
     <div class="container">
       <div class="blue-banner rounded">
-        <h3 class="section-subtitle mb-30">
+        <h3 class="section-subtitle mb-30" id="google-suchanfragen">
           Google-Suche im Vergleich: Die beliebtesten deutschen Sehenswürdigkeiten nach Google-Suchanfragen*
         </h3>
         <div class="places-wrap">
